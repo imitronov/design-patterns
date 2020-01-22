@@ -30,4 +30,14 @@ abstract class Duck
 
         return $this->_quackBehavior->quack();
     }
+
+    public function setFlyBehavior(FlyBehavior $fb)
+    {
+        $this->_flyBehavior = $fb;
+    }
+
+    public function setQuackBehavior(QuackBehavior $qb)
+    {
+        $this->_quackBehavior = $qb;
+    }
 }
