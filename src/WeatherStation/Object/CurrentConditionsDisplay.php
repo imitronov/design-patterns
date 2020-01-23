@@ -5,7 +5,6 @@ namespace App\WeatherStation\Object;
 use App\WeatherStation\Interfaces\DisplayElement;
 use App\WeatherStation\Interfaces\Observer;
 use App\WeatherStation\Interfaces\Subject;
-use Exception;
 
 class CurrentConditionsDisplay implements Observer, DisplayElement
 {

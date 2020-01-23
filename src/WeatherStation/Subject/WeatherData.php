@@ -4,7 +4,6 @@ namespace App\WeatherStation\Subject;
 
 use App\WeatherStation\Interfaces\Observer;
 use App\WeatherStation\Interfaces\Subject;
-use Exception;
 
 class WeatherData implements Subject
 {
@@ -66,6 +65,6 @@ class WeatherData implements Subject
         $this->_temperature = $temperature;
         $this->_humidity = $humidity;
         $this->_pressure = $pressure;
-        $this->notifyObservers();
+        $this->measurementsChanged();
     }
 }
