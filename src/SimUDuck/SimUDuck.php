@@ -7,9 +7,9 @@ use App\SimUDuck\Ducks\DynamicDuck;
 use App\SimUDuck\Ducks\MalladarDuck;
 use App\SimUDuck\Ducks\RubberDuck;
 
-class Run
+class SimUDuck
 {
-    public function __construct()
+    public function run()
     {
         echo '<pre>';
 
